@@ -12,9 +12,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install dependencies
-        working-directory: ~/Capstone
-        run: npm install
+        run: |
+          npm install
 
       - name: Run Cypress tests
-        working-directory: ~/Capstone
-        run: npx cypress run
+        run: |
+          npx cypress run
